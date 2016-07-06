@@ -27,13 +27,13 @@ How Does the Backend Code Look Like?
 ========================================================
 
 The R code running behind the Shiny app is an implementation of the previously-mentioned calculation.  
-```{r eval=FALSE}
+
+```r
 bmiCalc <- function(weight,height) {
   weightCalc <- weight * 0.45
   heightCalc <- (height * 0.025)^2
   
   1.0 * weightCalc / heightCalc
-
 ```
 
 What Is My Optimal BMI?
